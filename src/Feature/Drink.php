@@ -7,9 +7,9 @@ class Drink extends Menu
     private $type;
     private $topping=[];
 
-    public function __construct(string $name, float $price, string $image, string $type)
+    public function __construct(string $code, string $name, string $description, float $price, string $image, string $type)
     {
-        Parent::__construct($name, $price, $image);
+        Parent::__construct($code, $name, $description, $price, $image);
         $this->type = $type;
     }
 

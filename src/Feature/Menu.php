@@ -10,9 +10,11 @@ class Menu
     protected static $count=0;
     protected $orderCount = 0;
 
-    public function __construct(string $name, float $price, string $image=null)
+    public function __construct(string $code, string $name, string $description, float $price, string $image=null)
     {
+        $this->code = $code;
         $this->name = $name;
+        $this->description = $description;
         $this->price = $price;
         $this->image = $image;
         self::$count++;
@@ -21,6 +23,16 @@ class Menu
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getCode()
+    {
+        return $this->code;
+    }
+
+    public function getDescription()
+    {
+        return $this->description;
     }
 
     public function getImage()

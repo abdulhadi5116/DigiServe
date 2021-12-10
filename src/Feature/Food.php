@@ -6,9 +6,9 @@ class Food extends Menu
 {
     private $spiciness;
 
-    public function __construct(string $name, float $price, string $image, int $spiciness=0)
+    public function __construct(string $code, string $name, string $description, float $price, string $image, int $spiciness=0)
     {
-        Parent::__construct($name, $price, $image);
+        Parent::__construct($code, $name, $description, $price, $image);
         $this->spiciness = $spiciness;
     }
 
