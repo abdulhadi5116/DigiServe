@@ -10167,3 +10167,5 @@
 127.0.0.1 - - [10/Dec/2021:10:01:44 +0700] "GET /favicon.ico HTTP/1.1" 404 196
 127.0.0.1 - - [10/Dec/2021:10:01:54 +0700] "GET / HTTP/1.1" 200 3915
 127.0.0.1 - - [10/Dec/2021:10:01:54 +0700] "GET /Resource/Css/Bootstrap/dist/js/bootstrap.bundle.min.js HTTP/1.1" 200 23053
+[Fri Dec 10 14:01:36.450302 2021] [php7:error] [pid 13192:tid 1220] [client 127.0.0.1:60872] PHP Fatal error:  Uncaught Error: Call to undefined function config() in E:\\Portfolio\\DigiServe\\src\\connection.php:3\nStack trace:\n#0 E:\\Portfolio\\DigiServe\\index.php(8): require()\n#1 {main}\n  thrown in E:\\Portfolio\\DigiServe\\src\\connection.php on line 3
+127.0.0.1 - - [10/Dec/2021:14:01:36 +0700] "GET / HTTP/1.1" 500 -
